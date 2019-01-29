@@ -8,8 +8,6 @@ const main = async () => {
 
   // 2. Spawn Ganache test blockchain
   const provider = Ganache.provider();
-  console.log(provider.constructor.name)
-  
   const web3 = new Web3(provider);
   const accounts = await web3.eth.getAccounts();
 
